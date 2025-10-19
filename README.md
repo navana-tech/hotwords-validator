@@ -16,7 +16,7 @@ post-emi
 
 ## Ouput
 - A new file <hotwords_file>_validated.txt will be created in the same folder.
-- Each line shows the hotword/phrase and validation feedback specifying invlaid characters.
+- Each line shows the hotword/phrase and validation feedback specifying invalid characters.
 
 ```
 bodhi | ✅ OK

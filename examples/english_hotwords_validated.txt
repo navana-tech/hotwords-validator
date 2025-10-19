@@ -1,0 +1,3 @@
+bodhi | ✅ OK
+navana | ✅ OK
+post-emi | ❌ Invalid chars: -

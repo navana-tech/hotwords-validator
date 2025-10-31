@@ -1,6 +1,8 @@
 
 # Hotwords-Validator
 
+1. Keep all hotowrds/phrases each on a single line as mentioned below
+
 ## Usage
 ```bash
 python check_hotwords_characters.py <hotwords_file.txt> <language_code eg. hi>

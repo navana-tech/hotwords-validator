@@ -26,3 +26,7 @@ navana | ✅ OK
 post-emi | ❌ Invalid chars: -
 ```
 
+## Fix hotwords
+
+Based on the output you can remove characters whcich are not valid.
+

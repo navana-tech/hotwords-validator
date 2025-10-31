@@ -111,11 +111,6 @@ Replace digits with their full spoken equivalents, depending on the **language**
 | `24x7` | twenty four by seven |
 | `2FA` | two factor authentication |
 
-#### **Hindi Examples**
-| Digits | Written Form |
-|---------|--------------|
-| `73` | तिहत्तर |
-| `2FA` | दो फैक्टर ऑथेंटिकेशन |
 
 📝 **Explanation:**  
 This ensures that the ASR model correctly recognizes number-related terms as they would be spoken.

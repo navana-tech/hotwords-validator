@@ -44,5 +44,5 @@ credit-score! | ❌ Invalid chars: !-
 
 ## Fix hotwords
 
-Based on the output you can remove characters whcich are not valid.
+Based on the output by remove/changing characters whcich are not valid.
 

@@ -5,7 +5,7 @@ This tool validates hotwords or phrases before using them for ASR context biasin
 
 ## Usage
 ```bash
-python check_hotwords_characters.py <hotwords_file.txt> <language_code eg. hi>
+python check_hotwords_characters.py <hotwords_file.txt> <language_code eg. en or hi>
 ```
 
 ## Input

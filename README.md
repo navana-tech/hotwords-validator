@@ -18,6 +18,7 @@ bodhi.ai
 loan@bodhi
 navana#123
 73
+seventy three
 ₹loan
 EMI₹2000
 credit-score!
@@ -35,6 +36,7 @@ bodhi.ai | ❌ Invalid chars: .
 loan@bodhi | ❌ Invalid chars: @
 navana#123 | ❌ Invalid chars: #123
 73 | ❌ Invalid chars: 37
+seventy three | ✅ OK
 ₹loan | ❌ Invalid chars: ₹
 EMI₹2000 | ❌ Invalid chars: 02EIM₹
 credit-score! | ❌ Invalid chars: !-

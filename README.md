@@ -1,7 +1,7 @@
 
 # 🔍 Hotwords-Validator
 
-This tool validates hotwords or phrases before using them for ASR context biasing. It ensures that each hotword contains only valid characters for the selected language (e.g., English, Hindi, etc.) and helps you catch typos or special characters that can cause issues while using with ASR API.
+This tool validates hotwords or phrases before using them for ASR context biasing. It ensures that each hotword contains only valid characters for the selected language (e.g., English, Hindi, etc.) and helps you catch typos or special characters that can cause issues while using with Bodhi ASR API.
 
 ## Usage
 ```bash

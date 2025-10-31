@@ -44,5 +44,96 @@ credit-score! | ❌ Invalid chars: !-
 
 ## Fix hotwords
 
-Based on the output by remove/changing characters whcich are not valid. Punctuations, numerics and special characters are not valid. for any numbers pleasew rite its full form of how it is pronounced like `73` should be `seventy three` for english and similar to other languages as well.
+## 🧹 Rules for Fixing Hotwords
+
+### 1️⃣ Remove All Punctuation and Special Characters
+Hotwords should not contain symbols like `.`, `@`, `%`, `-`, `_`, `/`, `#`, `!`, etc.
+
+- ❌ **Invalid Examples:**
+  - `loan@bodhi`
+  - `emi%payment`
+  - `bodhi.ai`
+
+- ✅ **Fixed Examples:**
+  - `loan bodhi`
+  - `emi payment`
+  - `bodhi ai`
+
+📝 **Explanation:**  
+Punctuation and symbols are not valid input for ASR biasing. Replace them with spaces or remove them entirely.
+
+---
+
+### 2️⃣ Remove Numeric Digits
+Digits (0–9) should be written as **spoken words** for better recognition.
+
+- ❌ **Invalid Examples:**
+  - `emi123`
+  - `loan2025`
+  - `73percent`
+
+- ✅ **Fixed Examples:**
+  - `emi one two three`
+  - `loan twenty twenty five`
+  - `seventy three percent`
+
+📝 **Explanation:**  
+ASR models process spoken words, not numbers. Always write out numbers as they are pronounced.
+
+---
+
+### 3️⃣ Use Only Letters and Spaces
+Avoid connecting words using dashes, underscores, or slashes.
+
+- ❌ **Invalid Examples:**
+  - `post-emi`
+  - `loan_disbursement`
+  - `loan/disbursal`
+
+- ✅ **Fixed Examples:**
+  - `post emi`
+  - `loan disbursement`
+  - `loan disbursal`
+
+📝 **Explanation:**  
+Use clean, space-separated words for accurate pronunciation-based matching.
+
+---
+
+### 4️⃣ Write Numbers in Full (Language-Specific)
+
+Replace digits with their full spoken equivalents, depending on the **language** of your model.
+
+#### **English Examples**
+| Digits | Written Form |
+|---------|--------------|
+| `73` | seventy three |
+| `24x7` | twenty four by seven |
+| `2FA` | two factor authentication |
+
+#### **Hindi Examples**
+| Digits | Written Form |
+|---------|--------------|
+| `73` | तिहत्तर |
+| `2FA` | दो फैक्टर ऑथेंटिकेशन |
+
+📝 **Explanation:**  
+This ensures that the ASR model correctly recognizes number-related terms as they would be spoken.
+
+---
+
+## 📋 Common Invalid Examples and Their Fixes
+
+| Invalid Hotword | Invalid Characters | Fixed Hotword | Notes |
+|-----------------|--------------------|----------------|-------|
+| `post-emi` | `-` | `post emi` | Remove hyphen |
+| `bodhi.ai` | `.` | `bodhi ai` | Replace dot with space |
+| `loan@bodhi` | `@` | `loan bodhi` | Remove special character |
+| `navana#123` | `#123` | `navana one two three` | Replace digits with words |
+| `73` | `73` | `seventy three` | Write number in words |
+| `₹loan` | `₹` | `loan` | Remove currency symbol |
+| `EMI₹2000` | `₹2000` | `emi two thousand` | Remove currency and spell number |
+| `credit-score!` | `!-` | `credit score` | Remove punctuation |
+
+---
 

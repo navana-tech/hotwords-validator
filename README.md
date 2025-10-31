@@ -14,6 +14,13 @@ python check_hotwords_characters.py <hotwords_file.txt> <language_code eg. hi>
 bodhi
 navana
 post-emi
+bodhi.ai
+loan@bodhi
+navana#123
+73
+₹loan
+EMI₹2000
+credit-score!
 ```  
 
 ## Ouput
@@ -24,6 +31,13 @@ post-emi
 bodhi | ✅ OK
 navana | ✅ OK
 post-emi | ❌ Invalid chars: -
+bodhi.ai | ❌ Invalid chars: .
+loan@bodhi | ❌ Invalid chars: @
+navana#123 | ❌ Invalid chars: #123
+73 | ❌ Invalid chars: 37
+₹loan | ❌ Invalid chars: ₹
+EMI₹2000 | ❌ Invalid chars: 02EIM₹
+credit-score! | ❌ Invalid chars: !-
 ```
 
 ## Fix hotwords

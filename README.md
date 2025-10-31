@@ -1,7 +1,7 @@
 
-# Hotwords-Validator
+# 🔍 Hotwords-Validator
 
-1. Keep all hotowrds/phrases each on a single line as mentioned below
+This tool validates hotwords or phrases before using them for ASR context biasing. It ensures that each hotword contains only valid characters for the selected language (e.g., English, Hindi, etc.) and helps you catch typos or special characters that can cause recognition issues.
 
 ## Usage
 ```bash

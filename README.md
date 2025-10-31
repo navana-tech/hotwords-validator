@@ -44,5 +44,5 @@ credit-score! | ❌ Invalid chars: !-
 
 ## Fix hotwords
 
-Based on the output by remove/changing characters whcich are not valid.
+Based on the output by remove/changing characters whcich are not valid. Punctuations, numerics and special characters are not valid. for any numbers pleasew rite its full form of how it is pronounced like `73` should be `seventy three` for english and similar to other languages as well.
 
